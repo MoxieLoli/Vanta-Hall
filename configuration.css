@@ -1,0 +1,1939 @@
+body {
+  height: 50vh;
+    font-family: ARL, sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    transform: scale(0.75);
+}
+
+@font-face {
+    font-family: ARL;
+    src: url(SummerFavourite-ARLr6.ttf) format(truetype);
+}
+
+.placeholder {
+  color: white;
+  font-size: 30px;
+  font-family: ARL, sans-serif;
+  width: 150px;
+  height: 50px;
+  border: 3px solid lightblue;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: 3px solid lightblue;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+.placeholder:hover {
+  background-color: lightblue;
+  cursor: pointer;
+  border: 3px solid lightblue;
+}
+
+@keyframes fadeanim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dabtns {
+  margin-top: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-left: 20px;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  z-index: 100;
+  font-family: ARL, sans-serif;
+  border: 3px solid lightblue;
+}
+
+.dabtns:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.signup {
+  display: none;
+  background-size: cover;
+  background-position: center;
+  background-image: url(Space-Background-Images.jpg);
+  filter: drop-shadow(0 0 4px white);
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 35px;
+  border: 3px solid lightblue;
+  width: 510px;
+  height: 500px;
+  color: white;
+  position: fixed;
+  top: 310px;
+  left: 630px;
+  z-index: 9999;
+  overflow: hidden;
+  animation: fadeanim 0.3s ease;
+}
+.signup::before {
+  content: '';
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  transform: translate(-50%, -50%);
+  background-image: url(dark-blue-defocused-abstract-vector-gradient-template_901408-13189.png);
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 0;
+  overflow: hidden;
+  animation: spin 3s linear infinite forwards;
+  pointer-events: none;
+}
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(3000deg);
+  }
+}
+
+
+.registerbtn {
+  animation: fade 3s forwards;
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
+  display: flex;
+  top: -10%;
+  left: -150px;
+  position: absolute;
+  padding: 25px;
+  color: white;
+  font-size: 40px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  z-index: 100;
+  font-family: ARL, sans-serif;
+  user-select: none;
+  filter: drop-shadow(0 0 3px white);
+}
+
+.registerbtn:hover {
+  background-color: lightblue;
+}
+
+.username {
+  animation: fade 3s forwards;
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
+  display: flex;
+  top: -10%;
+  right: -190px;
+  position: absolute;
+  padding: 25px;
+  color: white;
+  font-size: 40px;
+  filter: drop-shadow(0 0 3px white);
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  z-index: 100;
+  font-family: ARL, sans-serif;
+}
+.accountlogo {
+  animation: fade 3s forwards;
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
+  display: flex;
+  top: -15%;
+  right: -350px;
+  position: absolute;
+  padding: 25px;
+  color: white;
+  font-size: 40px;
+  filter: drop-shadow(0 0 3px white);
+  width: 150px;
+  height: auto;
+  z-index: 100;
+}
+.container1 {
+  width: 460px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 310px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 1.2s all ease;
+  overflow: hidden;
+  transform: rotateX(30deg) rotateY(30deg);
+  animation-name: Fadein;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+.container1 .img1 {
+  background-image: url(Front-3_4_doors_up.jpg);
+  background-position: center;
+  background-size: 170%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: all 1.2s ease;
+}
+.container1 .text1 {
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 530px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.container1 .img1:hover {
+    filter: drop-shadow(0 0 10px white);
+    background-size: 300%;
+}
+.container1:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  margin-left: 150px;
+  width: 1360px;
+  transform: rotateX(15deg) rotateY(15deg);
+}
+@keyframes Fadein {
+    0% {
+        margin-top: 80%;
+        opacity: 0;
+        transform: rotateX(85deg) rotateY(85deg);
+    }
+    100% {
+      margin-top: 310px;
+      opacity: 1;
+      transform: rotateX(30deg) rotateY(30deg);
+    }
+}
+.container2 {
+  width: 460px;
+  height: 460px;
+
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 810px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 1.2s all ease;
+  overflow: hidden;
+  transform: rotateX(30deg) rotateY(30deg);
+  animation-name: Fadein2;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+.container2 .img2 {
+  background-image: url(mLGyQznyWPWqFjFAwHMWE4.jpg);
+  background-position: center;
+  background-size: 180%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: all 1.2s ease;
+}
+.container2 .text2 {
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 530px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+
+.container2 .img2:hover {
+    filter: drop-shadow(0 0 10px white);
+    background-size: 300%;
+}
+.container2:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  margin-left: 150px;
+  width: 1360px;
+  transform: rotateX(15deg) rotateY(15deg);
+}
+@keyframes Fadein2 {
+    0% {
+        margin-top: 80%;
+        opacity: 0;
+        transform: rotateX(85deg) rotateY(85deg);
+    }
+    100% {
+      margin-top: 810px;
+      opacity: 1;
+      transform: rotateX(30deg) rotateY(30deg);
+    }
+}
+.container3 {
+  width: 460px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 1310px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 1.2s all ease;
+  overflow: hidden;
+  transform: rotateX(30deg) rotateY(30deg);
+  animation-name: Fadein3;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+.container3 .img3 {
+  background-image: url(novitec-ferrari-sf90-stradale-2022.jpg);
+  background-position: center;
+  background-size: 180%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: all 1.2s ease;
+}
+.container3 .text3 {
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 530px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.container3:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  margin-left: 150px;
+  width: 1360px;
+  transform: rotateX(15deg) rotateY(15deg);
+}
+.container3 .img3:hover {
+    filter: drop-shadow(0 0 10px white);
+    background-size: 300%;
+}
+@keyframes Fadein3 {
+  0% {
+    margin-top: 2560px;
+    opacity: 0;
+    transform: rotateX(85deg) rotateY(85deg);
+  }
+  100% {
+    margin-top: 1310px;
+    opacity: 1;
+    transform: rotateX(30deg) rotateY(30deg);
+  }
+}
+.container4 {
+  width: 460px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  right: -80px;
+  margin-top: 310px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 1.2s all ease;
+  overflow: hidden;
+  transform: rotateX(30deg) rotateY(-30deg);
+  animation-name: Fadein4;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+.container4 .img4 {
+  background-image: url(2023-ford-gt-mk-iv-02-1670543667.png);
+  background-position: center;
+  background-size: 170%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  right: 30px;
+  width: 445px;
+  height: 445px;
+  transition: all 1.2s ease;
+}
+.container4 .text4 {
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  right: 530px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.container4 .img4:hover {
+    filter: drop-shadow(0 0 10px white);
+    background-size: 300%;
+}
+.container4:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  margin-right: 150px;
+  width: 1360px;
+  transform: rotateX(15deg) rotateY(15deg);
+}
+@keyframes Fadein4 {
+    0% {
+        margin-top: 80%;
+        opacity: 0;
+        transform: rotateX(85deg) rotateY(85deg);
+    }
+    100% {
+      margin-top: 310px;
+      opacity: 1;
+      transform: rotateX(30deg) rotateY(-30deg);
+    }
+}
+.container5 {
+  width: 460px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  right: -80px;
+  margin-top: 810px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 1.2s all ease;
+  overflow: hidden;
+  transform: rotateX(30deg) rotateY(-30deg);
+  animation-name: Fadein5;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+.container5 .img5 {
+  background-image: url(2024-chevrolet-corvette-z06-300-scaled.jpg);
+  background-position: center;
+  background-size: 180%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  right: 30px;
+  width: 445px;
+  height: 445px;
+  transition: all 1.2s ease;
+}
+.container5 .text5 {
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  right: 530px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+
+.container5 .img5:hover {
+    filter: drop-shadow(0 0 10px white);
+    background-size: 300%;
+}
+.container5:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  margin-right: 150px;
+  width: 1360px;
+  transform: rotateX(15deg) rotateY(15deg);
+}
+@keyframes Fadein5 {
+    0% {
+        margin-top: 80%;
+        opacity: 0;
+        transform: rotateX(85deg) rotateY(85deg);
+    }
+    100% {
+      margin-top: 810px;
+      opacity: 1;
+      transform: rotateX(30deg) rotateY(-30deg);
+    }
+}
+.container6 {
+  width: 460px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  right: -80px;
+  margin-top: 1310px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 1.2s all ease;
+  overflow: hidden;
+  transform: rotateX(30deg) rotateY(-30deg);
+  animation-name: Fadein6;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+.container6 .img6 {
+  background-image: url(2025_mclaren_artura_coupe_base_fq_oem_1_1280.png);
+  background-position: center;
+  background-size: 150%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  right: 30px;
+  width: 445px;
+  height: 445px;
+  transition: 1.2s all ease;
+}
+.container6 .text6 {
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  right: 530px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.container6:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  margin-right: 150px;
+  width: 1360px;
+  transform: rotateX(15deg) rotateY(15deg);
+}
+.container6 .img6:hover {
+    filter: drop-shadow(0 0 10px white);
+    background-size: 300%;
+}
+@keyframes Fadein6 {
+  0% {
+    margin-top: 2560px;
+    opacity: 0;
+    transform: rotateX(85deg) rotateY(85deg);
+  }
+  100% {
+    margin-top: 1310px;
+    opacity: 1;
+    transform: rotateX(30deg) rotateY(-30deg);
+  }
+}
+.heading {
+    position: absolute;
+    display: flex;
+    font-size: 128px;
+    left: 280px;
+    top: -10%;
+    color: white;
+    text-shadow: 0 0 10px white;
+    animation: fade 3s ease;
+}
+.heading2 {
+    position: absolute;
+    display: flex;
+    font-size: 128px;
+    right: 280px;
+    top: -10%;
+    color: white;
+    text-shadow: 0 0 10px white;
+    animation: fade 3s ease;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to (
+        opacity: 1;
+    )
+}
+.shop {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 2500px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade2;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop .image {
+  background-image: url(2018_aston-martin_vanquish-s_2018_aston-martin_vanquish-s_2dddaa4d-a7f8-46c5-81ca-4dad2d23f28c-ztLIwx-39173-39174-scaled.png);
+  background-position: center;
+  background-size: 150%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop .info::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop .info {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop:hover {
+    box-shadow: 0 0 20px white;
+    filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase1{
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase1:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "Sold Out";
+}
+.purchase1.sold {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop .image:hover {
+    background-size: 300%;
+}
+@keyframes fade2 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 5000px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 2500px;
+    opacity: 1;
+  }
+}
+.shop2 {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 3100px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade3;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop2 .image2 {
+  background-image: url(2024-porsche-911-gt3-rs-138-64ecda037334a.png);
+  background-position: center;
+  background-size: 180%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop2 .info2::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop2 .info2 {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop2:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase2{
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname2 {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase2:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "Sold Out";
+}
+.purchase2.sold2 {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop2 .image2:hover {
+    background-size: 300%;
+}
+@keyframes fade3 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 5600px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 3100px;
+    opacity: 1;
+  }
+}
+.shop3 {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 3700px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade4;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop3 .image3 {
+  background-image: url(652854_8e9bf4d3b6.jpeg);
+  background-position: center;
+  background-size: 200%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop3 .info3::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop3 .info3 {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop3:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase3{
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname3 {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase3:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "";
+}
+.purchase3.sold3 {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop3 .image3:hover {
+    background-size: 300%;
+}
+@keyframes fade4 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 6200px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 3700px;
+    opacity: 1;
+  }
+}
+.shop4 {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 4300px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade5;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop4 .image4 {
+  background-image: url(mes.png);
+  background-position: center;
+  background-size: 150%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop4 .info4::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop4 .info4 {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop4:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase4{
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname4 {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase4:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "";
+}
+.purchase4.sold4 {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop4 .image4:hover {
+    background-size: 300%;
+}
+@keyframes fade5 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 6800px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 4300px;
+    opacity: 1;
+  }
+}
+
+.shop5 {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 4900px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade6;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop5 .image5 {
+  background-image: url(novitec-ferrari-sf90-stradale-2022.jpg);
+  background-position: center;
+  background-size: 180%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop5 .info5::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop5 .info5 {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop5:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase5{
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname5 {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase5:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "";
+}
+.purchase5.sold5 {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop5 .image5:hover {
+    background-size: 300%;
+}
+@keyframes fade6 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 7400px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 4900px;
+    opacity: 1;
+  }
+}
+
+.shop6 {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 5500px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade7;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop6 .image6 {
+  background-image: url(rimac-nevera-r.jpg);
+  background-position: center;
+  background-size: 180%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop6 .info6::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop6 .info6 {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop6:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase6 {
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname6 {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase6:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "";
+}
+.purchase6.sold6 {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop6 .image6:hover {
+    background-size: 300%;
+}
+@keyframes fade7 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 8000px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 5500px;
+    opacity: 1;
+  }
+}
+
+.shop7 {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 6100px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade8;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop7 .image7 {
+  background-image: url(audi-r8-coupe-99ec87fb1056.jpg);
+  background-position: center;
+  background-size: 180%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop7 .info7::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop7 .info7 {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop7:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase7 {
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname7 {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase7:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "";
+}
+.purchase7.sold7 {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop7 .image7:hover {
+    background-size: 300%;
+}
+@keyframes fade8 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 8600px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 6100px;
+    opacity: 1;
+  }
+}
+.shop8 {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 6700px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade9;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop8 .image8 {
+  background-image: url(TG_DSC0155.jpg);
+  background-position: center;
+  background-size: 180%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop8 .info8::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop8 .info8 {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop8:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase8 {
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname8 {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase8:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "";
+}
+.purchase8.sold8 {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop8 .image8:hover {
+    background-size: 300%;
+}
+@keyframes fade9 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 9200px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 6700px;
+    opacity: 1;
+  }
+}
+.shop9 {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 7300px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade10;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop9 .image9 {
+  background-image: url(Hennessey-Finalizes-Testing-of-2031-HP-Venom-F5-Evolution-Hypercar-Low-2-1.jpg);
+  background-position: center;
+  background-size: 180%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop9 .info9::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop9 .info9 {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop9:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase9 {
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname9 {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase9:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "";
+}
+.purchase9.sold9 {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop9 .image9:hover {
+    background-size: 300%;
+}
+@keyframes fade10 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 9800px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 7300px;
+    opacity: 1;
+  }
+}
+.shop10 {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 7900px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade11;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop10 .image10 {
+  background-image: url(lotus-evija-front.jpg);
+  background-position: center;
+  background-size: 220%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop10 .info10::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop10 .info10 {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop10:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase10 {
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname10 {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase10:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "";
+}
+.purchase10.sold10 {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop10 .image10:hover {
+    background-size: 300%;
+}
+@keyframes fade11 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 10400px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 7900px;
+    opacity: 1;
+  }
+}
+.shop11 {
+  width: 2000px;
+  height: 460px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  left: -80px;
+  margin-top: 8500px;
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  transition: 0.8s all ease;
+  overflow: hidden;
+  animation-name: fade12;
+  animation-timing-function: ease;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.shop11 .image11 {
+  background-image: url(lotus-evija-front.jpg);
+  background-position: center;
+  background-size: 220%;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 9px;
+  left: 30px;
+  width: 445px;
+  height: 445px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 10px white);
+}
+.shop11 .info11::-webkit-scrollbar {
+  background-color: transparent;
+}
+.shop11 .info11 {
+  overflow: auto;
+    text-shadow: 0 0 10px white;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  left: 1130px;
+  width: 845px;
+  height: 845px;
+  color: white;
+  font-size: 36px;
+}
+.shop11:hover {
+    box-shadow: 0 0 20px white;
+  filter: drop-shadow(0 0 10px white);
+  background-color: rgb(24, 23, 23);
+}
+.purchase11 {
+  background: transparent;
+  border: 5px solid lightblue;
+  border-radius: 20px;
+  display: flex;
+  position: absolute;
+  margin-top: 300px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.carname11 {
+  background: transparent;
+  display: flex;
+  position: absolute;
+  margin-top: 50px;
+  left: 600px;
+  width: 300px;
+  height: 100px;
+  transition: background-size 0.5s ease;
+  filter: drop-shadow(0 0 1px white);
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: background-color 0.97s ease;
+}
+.purchase11:hover{
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  content: "";
+}
+.purchase11.sold11 {
+  background-color: yellow;
+  border: 5px solid yellow;
+  color: green;
+  
+}
+.shop11 .image11:hover {
+    background-size: 300%;
+}
+@keyframes fade12 {
+  0% {
+    transform: rotateX(85deg) rotateY(85deg);
+    margin-top: 11000px;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    margin-top: 8500px;
+    opacity: 1;
+  }
+}
